@@ -1,0 +1,238 @@
+* {
+ padding: 0;
+ margin: 0;
+
+}
+
+body {
+ /* font-family:"Amatic SC", cursive!important; */
+ background-color: black;
+ /* background-image: linear-gradient(to right, #E6DADA,#0b353f); */
+}
+
+p {
+ font-family: "Poppins", sans-serif !important;
+}
+
+.trim-3-lines {
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 3;
+ -webkit-box-orient: vertical;
+}
+
+.add__new__btn__modile__only {
+    position: fixed;
+    bottom: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    padding: 15px 10px;
+    background: black;
+    z-index: 3;
+}
+.place__holder__image {
+ height: 200px;
+ width: 100%;
+}
+.task__card {
+ cursor: pointer;
+}
+
+.task__card:hover {
+  box-shadow: 0 0 20px 0px white;
+  transition: 0.3s;
+  transform: translateY(-7px);
+ border: 1px solid #065a79;
+}
+
+.task__card:hover .task__card__title {
+ color: #065a79;
+}
+
+.task__card:hover .task__card__header {
+ border-bottom: 1px solid #065a79;
+
+}
+.task__card:hover .task__card__footer {
+ border-top: 1px solid #065a79;
+}
+
+.video {
+display: none;
+}
+
+@media (min-width: 768px) {
+  .add__new__btn__modile__only {
+    display: none;
+    
+  }
+
+}
+@media (max-width: 768px) {
+  .add__new__btn__modile__only {
+    position: fixed;
+    bottom: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    padding: 15px 10px;
+    background: black;
+    z-index: 3;
+}
+footer{
+  color: white;
+}
+
+}
+
+@media (min-width: 1024px) {
+ .video {
+  display: block;
+ }
+}
+
+strong{
+  color: white;
+}
+
+#layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+#layer:hover {
+  background: linear-gradient(rgba(67, 233, 245, 0.5), #01404f);
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid black;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  margin-right: 5px;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+/* .btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid black;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  margin-right: 5px;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+} */
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #333333;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  color: white;
+}
+.bg-primary {
+  background-color: #065a79!important;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(./images/menu.png);
+}
+
+
+.text-box{
+  
+  top: 0px;
+  left: 0px;
+  color: white;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: 5s;
+ }
+  .text-box:hover {
+    background: linear-gradient(rgba(4, 108, 116, 0.5), #000f13);
+  }
+
+  .text-box h1  {
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 25px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .text-box:hover h1  {
+    bottom: 69%;
+    opacity: 1;
+  }
+
+  .text-box p {
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .text-box:hover p  {
+    bottom: 49%;
+    opacity: 1;
+  }
+  
+  @media (max-width: 700px){
+    .text-box h1 {
+      font-size: 15px;
+    }
+    .text-box:hover h1  {
+      top: 11%;
+      opacity: 1;
+    }
+    .text-box p {
+      font-size: 9px;
+    }
+    .text-box:hover p  {
+      top: 39%;
+      opacity: 1;
+    }
+ 
+  }
+
